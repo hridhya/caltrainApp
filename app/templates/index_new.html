@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='cookie_sample.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js.cookie.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='newApp.js') }}"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+  </head>   
+  <body>
+  	<script type=text/javascript>
+  		$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+	</script>
+  	<div class="menu">
+      	<!-- Menu icon -->
+      <div class="icon-close">
+        <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+      </div>
+
+      <!-- Menu -->
+      <ul id='mylist'>
+        <li id='1'>SanFrancisco</li>
+        <li id='2'>SanJose</li>
+        <li id='3'>Sunnyvale</li>
+        <li id='4'>MountainView</li>
+        <li id='5'>Hayward</li>
+        <li id='6'>Gilroy</li>
+        <li id='7'>SanBruno</li>
+        <li id='8'>Tamien</li>
+      </ul>
+    </div>
+
+   
+    <div class="jumbotron">
+		<div class="icon-menu">
+        	<i class="fa fa-bars"></i>
+       			Save New Preferences
+    		<p>Preferred station details:</p> <span id='result'></span>
+    	</div>
+    </div>
+  </body>
+</html>

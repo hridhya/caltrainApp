@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js.cookie.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='cookies.js') }}"></script>
+		<title>Train Table</title>	
+	</head>
+	
+	<body>
+		<script type=text/javascript>
+  			$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+		</script>
+		<div class="main">
+    		<div class="jumbotron">
+    			<h1>The Train Table</h1>
+	 		</div>
+    	</div>
+		
+		<div class="container">
+    		<div class = "details">
+    			<h4>Please select your preferred station</h4> 
+   				<select id="a">
+  					<option value="SanFrancisco">SanFrancisco</option>
+  					<option value="SanJose">SanJose</option>
+  					<option value="Sunnyvale">Sunnyvale</option>
+  					<option value="MountainView">MountainView</option>
+  					<option value="Hayward">Hayward</option>
+  					<option value="Gilroy">Gilroy</option>
+  					<option value="SanBruno">SanBruno</option>
+  					<option value="Tamien">Tamien</option>
+				</select> 
+				<p><a href=# id=cookies>Save New Preferences</a>
+				</br>
+				<p>Preferred station details:</p> <span id='result'></span>
+				
+				
+			</div>
+		</div>
+	</body>
+	
+</html>
