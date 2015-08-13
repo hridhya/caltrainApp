@@ -62,7 +62,7 @@ def preferences() :
 	
 	station = a
 	lst = []
-	lst.append(a + ":---->")
+	lst.append(a + ": ")
 	for i in departure_event :
 		if i.station_name == station and i.departure_time.split(":")[0] >= time_hours and i.departure_time.split(":")[1] >= time_mins:
 			lst.append(i.direction + " --- " + str(i.train_id) +" --- " + i.departure_time + " --- " + i.type)  
@@ -75,7 +75,7 @@ def list_of_trains() :
 	station = a
 	
 	lst = []
-	lst.append(a + ":---->")
+	lst.append(a + ": ")
 	for i in departure_event :
 		if i.station_name == station and i.departure_time.split(":")[0] >= time_hours and i.departure_time.split(":")[1] >= time_mins:
 			lst.append(i.direction + " --- " + str(i.train_id) +" --- " + i.departure_time + " --- " + i.type) 

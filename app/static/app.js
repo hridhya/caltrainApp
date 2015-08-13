@@ -2,9 +2,12 @@ $(function() {
 	
 	$.getJSON($SCRIPT_ROOT + '/preferences', 
 	function(data) {
-        $("#result").text(data.result);
+		var array = data.result
+		$("#result").html( '<span>' + array.join('</span><span>')+'</span>');
       	return false;
     });
     
     
 });
+
+
