@@ -8,7 +8,7 @@ body {
 
 /* Initial menu */
 .menu {
-  background: #202024 url('http://www.ctsupplies.com.au/wp-content/uploads/2013/05/Plain-Glossy-Light-Grey-300x300.jpg') repeat left top;
+  background: #202024 url('data:image/jpeg;base64,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') repeat left top;
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
@@ -18,7 +18,7 @@ body {
 /* Basic styling */
 
 .jumbotron {
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png'); 
+  background-image: url('http://www.htc24x7.com/sites/all/themes/city_magazine/css/background/green/images/header-wrapper-bg.png'); 
   height: 100%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -28,6 +28,7 @@ body {
 	padding-left: 25px;
 	
 }
+
 
 .menu ul {
   border-top: 1px solid #636366;
@@ -58,6 +59,11 @@ body {
   cursor: pointer;
   padding-left: 10px;
   padding-top: 10px;
+  color: #fff;
+  font-size: 20px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  text-align: right;
 }
 
 .icon-menu {
@@ -74,4 +80,10 @@ body {
 
 .icon-menu i {
   margin-right: 5px;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
 }
